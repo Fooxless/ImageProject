@@ -1,6 +1,6 @@
 [Back to Portfolio](https://github.com/Fooxless/Portfolio-Connor-Gryphon)
 
-# MashFoodie Web App [2022]
+# ImageProject Web App [2022]
 The purpose of this cloud application is to allow an individual to generate a random image then download it in a variety of formats depending on how they would like to use it. Currently the different support formats are HD, HDV, 2k and 4k. The idea here, is that they don’t have to explicitly specify a single format, they can download the HD and 4k versions if they wish. In addition to generating and downloading a random image, a user is also able to go back through the global history and retrieve a recent previously downloaded image if it appears within the last 10 images generated.
 
 ![screenshot 3](https://user-images.githubusercontent.com/102510556/210462750-205a331d-561e-410e-84e4-192bc52521c8.PNG)
