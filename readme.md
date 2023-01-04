@@ -1,22 +1,35 @@
-# CAB 432 React Express Example
-This is a simple example of serving a React Application from within your Express Server, alongside your API. In this example we have two separate folders, client and server - they each house their respective files and logic. We assume at this point you're able to containerize an application yourself so we have left that as an exercise for you.
+[Back to Portfolio](https://github.com/Fooxless/Portfolio-Connor-Gryphon)
 
-### Client
-The client directory was created using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). We have modified the boilerplate application to add a `FavoriteAnimal` component that makes a simple api request to `/api/question` and displays the response. You can follow this and similar patterns for all of your API requests.
+# MashFoodie Web App [2022]
+The purpose of this cloud application is to allow an individual to generate a random image then download it in a variety of formats depending on how they would like to use it. Currently the different support formats are HD, HDV, 2k and 4k. The idea here, is that they don’t have to explicitly specify a single format, they can download the HD and 4k versions if they wish. In addition to generating and downloading a random image, a user is also able to go back through the global history and retrieve a recent previously downloaded image if it appears within the last 10 images generated.
 
-### Server
-The server directory was created by following the Express [Hello World Example](https://expressjs.com/en/starter/hello-world.html) and static assets are served following the Express [Serving Static Files Example](https://expressjs.com/en/starter/static-files.html). There are comments in the `index.js` file explaining what's happening in there.
+![screenshot 3](https://user-images.githubusercontent.com/102510556/210462750-205a331d-561e-410e-84e4-192bc52521c8.PNG)
 
-### Modifications
+![screenshot 4](https://user-images.githubusercontent.com/102510556/210462756-713a96eb-61a9-4303-a840-2f16539af41c.PNG)
+
+This cloud application was also set to scale depending on a load balancer managing a small cluster of ec2 instances. The load was generated from the image transformations of the random unsplash image to the differing resolutions. The architecture was created to support this scaling.
+
+![Architecture](https://user-images.githubusercontent.com/102510556/210462939-4782c78c-3fde-465e-b921-43f446ca8c83.png)
+
+
 ### Getting Started
-``` bash
-# Build your client application first
+This application requires:
+ - AWS credentials 
+ 
+Build your client application first
+``` 
 cd client
 npm run build
+```
 
-# Start the server
+Start the server
+```
 cd ../server
 node index.js
-
-# Open your browser and navigate to localhost:3000
 ```
+
+Open your browser and navigate to localhost:3000
+
+*This project was a university assignment.*
+
+*Other Team Members include: Mike Senna*
